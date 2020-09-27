@@ -4,7 +4,14 @@ output: github_document
 ---
 
 # -------------------------------------------------------------------------------------------------- #
-This document shows the results of RMSE tests for different in sample testing period. Note that after 1989, R starts to throw warnings for VECM models. This problem occurs due to either insufficient degrees of freedom in Johansen test, or due to the fact that same exact test either produces NaN results of complex number output that cannot be used in further functions. Thus going beyond this year is undesirable. All in all, RMSE tests offer 1975 as the best starting point for model fitting. I also cheeked 1975 +-3 years, to indeed know that there is no better year around.
+This document shows the results of RMSE tests for different in sample testing period. 
+Note that after 1989, R starts to throw warnings for VECM models. 
+This problem occurs due to either insufficient degrees of freedom in Johansen test, 
+or due to the fact that same exact test either produces NaN results or complex number output 
+that cannot be used in further functions. 
+Thus going beyond this year is undesirable. 
+All in all, RMSE tests offer 1975 as the best starting point for model fitting. 
+I also cheeked 1975 +-3 years, to indeed know that there is no better year around.
 # -------------------------------------------------------------------------------------------------- #
 
 # -------------------------------------------------------------------------------------------------- #
@@ -59,8 +66,9 @@ model       Females  Males
 # -------------------------------------------------------------------------------------------------- #
 
 # -------------------------------------------------------------------------------------------------- #
-After this point model results are questionable. VECM model practilly does not work, thus,
-We also cannot be sure that all other models workd adequately. Most likely we shall neglest these results.
+After this point the robustness of model results is questionable. 
+VECM model practically does not work, thus, we also cannot be sure that all other models work adequately. Most likely we shall neglect these results, especially since they add no further value 
+to the period choice.
 # -------------------------------------------------------------------------------------------------- #
 
 # -------------------------------------------------------------------------------------------------- #
