@@ -26,9 +26,11 @@ Other than that I think we pulled everything we could from the models. In terms 
  
 # Difference in RMSE calculations
 There is some difference in ,ethodlogy of RMSE calculation that I use compared to that of Soren et al. They calculates the RMSE for each age group and then simply take the average. I combine all the age groups and then calculate RMSE. We both use rolling bases for the calculation. He also calculates RMSE for LC model in terms om Mx, while I use dx for this task. I do not think that any of these affects results significantly, but is still worth mentioning.\
+NOTE: RMSE listed in old version of paper are essentially wrong, so best to reffer to _rmse_results_ file.\
 
 # Conclusions
 I do not see any methodological contribution made by me, other than the observational ones. I would frame the conclusion in terms of the Russian case vs. the chosen comparator + some ideas on why the models perform poorly in males. This reasons are:\
 Models depend on the long enough time series of mortality with preferably uniform k(t) (the time pattern of mortality) dynamics and no significant fluctuations + POSSIBLY certainly groupped causes of death.\
 LC at the same time, has less restrictions, so one of the conclusions should be that LC can be preffered in case of very unstable dynamics or short time series. Although in both cases it might be the best possible option, but still a bad one.\
+Also, it seems that forecasting 20 years ahead given the observed dynamics and its uncertainty is a false approach for Russia, and we should focus of 10 years ahead forecast.\
 But again, all these conclusions make sence if I made no mistakes in a code. I cheked it many times and found no other mistakes, but I think that review would be great still. I would highly appreciate any comments on code and calculations. If there is no mistakes, I can easily finalize the paper in 2-3 days, and we can proceed to the journal application process itsef. However if there is something else we could pull off the models or there is any mistake, Iam very much eager to fix it.\
