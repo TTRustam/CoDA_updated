@@ -4,10 +4,7 @@ output: github_document
 ---
 
 # -------------------------------------------------------------------------------------------------- #
-Best results // Note that after 1989, R starts to throw warnings for VECM models
-Thus goin beyound this year is undesirable.
-All in aLl, RMSE tests offer 1975 as the best starting point for model fitting.
-I also cheked 1975 +-3 years, The results are worse than in 1975.
+This document shows the results of RMSE tests for different in sample testing period. Note that after 1989, R starts to throw warnings for VECM models. This problem occurs due to either insufficient degrees of freedom in Johansen test, or due to the fact that same exact test either produces NaN results of complex number output that cannot be used in further functions. Thus going beyond this year is undesirable. All in all, RMSE tests offer 1975 as the best starting point for model fitting. I also cheeked 1975 +-3 years, to indeed know that there is no better year around.
 # -------------------------------------------------------------------------------------------------- #
 
 # -------------------------------------------------------------------------------------------------- #
