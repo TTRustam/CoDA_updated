@@ -1,0 +1,91 @@
+---
+title: "RMSE tests"
+output: html_document
+keep_md: true
+---
+
+# -------------------------------------------------------------------------------------------------- #
+Best results // Note that after 1989, R starts to throw warnings for VECM models
+Thus goin beyound this year is undesirable.
+All in aLl, RMSE tests offer 1975 as the best starting point for model fitting.
+I also cheked 1975 +-3 years, The results are worse than in 1975.
+# -------------------------------------------------------------------------------------------------- #
+
+# -------------------------------------------------------------------------------------------------- #
+# Best fit for 2008:2018
+Females      Males   Year F/M
+2S 0.00330   0.0221  1975/1975
+LC 0.00311   0.0223  1992/1975
+# -------------------------------------------------------------------------------------------------- #
+
+# -------------------------------------------------------------------------------------------------- #
+# 1965:2008
+model       Females  Males
+1 2S CoDA   0.0147  0.0510
+2 LC        0.0121  0.0386
+3 VECM CoDA 0.00448 0.0469
+4 CT CoDA   0.0229  0.0551
+
+# 1970:2008
+model       Females  Males
+1 2S CoDA   0.0103  0.0377
+2 LC        0.00772 0.0294
+3 VECM CoDA 0.0107  0.0365
+4 CT CoDA   0.0146  0.0419
+ 
+# 1975:2008
+model       Females  Males
+1 2S CoDA   0.00330 0.0221
+2 LC        0.00371 0.0223
+3 VECM CoDA 0.0116  0.0251
+4 CT CoDA   0.00577 0.0274
+ 
+# 1980:2008
+model       Females  Males
+1 2S CoDA   0.00675 0.0266
+2 LC        0.00378 0.0286
+3 VECM CoDA 0.0187  0.0382
+4 CT CoDA   0.0119  0.0345
+
+# 1985:2008
+model       Females  Males
+1 2S CoDA   0.0124  0.0553
+2 LC        0.0139  0.0660
+3 VECM CoDA 0.00559 0.0628
+4 CT CoDA   0.0167  0.0488
+
+# 1989:2008
+model       Females  Males
+1 2S CoDA   0.0114  0.0708
+2 LC        0.0196  0.0819
+3 VECM CoDA 0.00608 0.0554
+4 CT CoDA   0.0152  0.0665
+# -------------------------------------------------------------------------------------------------- #
+
+# -------------------------------------------------------------------------------------------------- #
+After this point model results are questionable. VECM model practilly does not work, thus,
+We also cannot be sure that all other models workd adequately. Most likely we shall neglest these results.
+# -------------------------------------------------------------------------------------------------- #
+
+# -------------------------------------------------------------------------------------------------- #
+# 1990:2008
+model       Females  Males
+1 2S CoDA   0.00918 0.0674
+2 LC        0.0181  0.0760
+3 VECM CoDA 0.00837 0.0910
+4 CT CoDA   0.00915 0.0689
+ 
+# 1991:2008
+model       Females  Males
+1 2S CoDA   0.00608 0.0693
+2 LC        0.00296 0.0742
+3 VECM CoDA 0.00543 0.0644
+4 CT CoDA   0.00399 0.0663
+
+# 1992:2008
+model       Females  Males
+1 2S CoDA   0.00354 0.0655
+2 LC        0.00311 0.0613
+3 VECM CoDA 0.0219  0.0649
+4 CT CoDA   0.00502 0.0636
+# -------------------------------------------------------------------------------------------------- #
