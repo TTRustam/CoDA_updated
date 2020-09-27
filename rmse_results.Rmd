@@ -1,7 +1,6 @@
 ---
 title: "RMSE tests"
-output: html_document
-keep_md: true
+output: github_document
 ---
 
 # -------------------------------------------------------------------------------------------------- #
