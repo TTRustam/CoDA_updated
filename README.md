@@ -3,7 +3,7 @@ This file contains some new data and rewritten and restructured scripts. This wa
 I have deliberately excluded parts of the code that aim for data manipulation of LT calculation only. I have these scripts locally and will add them to Git as soon as I will be sure that the analysis is correct. I have thus created several data files to simply read them into R, which in my idea will simplify the review process. 
 
 # Contents
-**exposure** folder contains the mid-year population estimates for Russia (Rus)
+**exposure** folder contains the mid-year population estimates for Russia (Rus) /n
 mortality contains the total Mx, cause specific Mx, and cause-specific cancer mortality.
 **life_table** is Rus life table (Calculated following method described in Preston et al.)
 **RMSE** folder contains two data files with observed dx to compare with the fitted values.
