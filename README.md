@@ -26,9 +26,9 @@ Other than that I think we pulled everything we could from the models. In terms 
  
 # Difference in RMSE calculations
 There is some difference in ,ethodlogy of RMSE calculation that I use compared to that of Soren et al. They calculates the RMSE for each age group and then simply take the average. I combine all the age groups and then calculate RMSE. We both use rolling bases for the calculation. He also calculates RMSE for LC model in terms om Mx, while I use dx for this task. I do not think that any of these affects results significantly, but is still worth mentioning.\
-NOTE: RMSE listed in old version of paper are essentially wrong, so best to reffer to _rmse_results_ file.\
+NOTE: RMSE listed in old version of paper are essentially wrong, so best to reffer to rmse_results_ file.\
 
-# Conclusions
+# To sum up
 I do not see any methodological contribution made by me, other than the observational ones. I would frame the conclusion in terms of the Russian case vs. the chosen comparator + some ideas on why the models perform poorly in males. This reasons are:\
 Models depend on the long enough time series of mortality with preferably uniform k(t) (the time pattern of mortality) dynamics and no significant fluctuations + POSSIBLY certainly groupped causes of death.\
 LC at the same time, has less restrictions, so one of the conclusions should be that LC can be preffered in case of very unstable dynamics or short time series. Although in both cases it might be the best possible option, but still a bad one.\
