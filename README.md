@@ -11,7 +11,7 @@ I have deliberately excluded parts of the code that aim for data manipulation or
 **auxillary_functions** are the functions called by other scripts. They mostly do prefill other functions or are used for data cleaning and manipulation\
 **inner_functions** are the functions used to calculate the SVD and resulting LT after forecasting by the main functions\
 **main_functions** are the 4 compositional models\
-**to_plot** (a rather ugly name, I know and shall rename this file slightly later) contains some functions used for plotting and data manipulation process that were pulled from the main analysis to ease the review process. **It also contains the RMSE calculation function** which is very important for us, since this is how we select the fitting period and best model\
+**to_plot** (a rather ugly name, I know and shall rename this file slightly later) contains some functions used for plotting and data manipulation process that were pulled from the main analysis to ease the review process. **It also contains the RMSE calculation function** which is very important for us, since this is how we select the fitting period and best model (this function is the very last one and is called _rmse_models().\
 **rmse_results** - is a markdown file containing some short description and tables for RMSE checks on different fitting period and also shows the best one\
 **results** Is the main file that calls all other files to produce the results. It prints the most important figures and tables and has some comments (Note that what is being printed starts in line 220)\
 **soren_ppaper** - contains the Sorens paper itself, as well as its statistical supplement that went onluie.\
