@@ -5,17 +5,17 @@ I have deliberately excluded parts of the code that aim for data manipulation of
 # Contents
 **exposure** folder contains the mid-year population estimates for Russia (Rus)\
 **mortality** contains the total Mx, cause specific Mx, and cause-specific cancer mortality\
-**life_table** is Rus life table (Calculated following method described in Preston et al.);
-**RMSE** folder contains two data files with observed dx to compare with the fitted values;
-**coda_functions** folder contains several files: 
-**auxillary_functions** are the functions called by other scripts. They mostly do prefill other functions or are used for data cleaning and manipulation. 
-**inner_functions** are the functions used to calculate the SVD and resulting LT after forecasting by the main functions.
-**main_functions** are the 4 compositional models.
-**to_plot** (a rather ugly name, I know and shall rename this file slightly later) contains some functions used for plotting and data manipulation process that were pulled from the main analysis to ease the review process. **It also contains the RMSE calculation function** which is very important for us, since this is how we select the fitting period and best model.
-**rmse_results** - is a markdown file containing some short description and tables for RMSE checks on different fitting period and also shows the best one.
-**results** Is the main file that calls all other files to produce the results. It prints the most important figures and tables and has some comments (Note that what is being printed starts in line 220)
-**soren_ppaper** - contains the Sorens paper itself, as well as its statistical supplement that went onluie.
-**old_version_of_the_paper** Contains the old version of the draf prepared during EDSD.
+**life_table** is Rus life table (Calculated following method described in Preston et al.)\
+**RMSE** folder contains two data files with observed dx to compare with the fitted values\
+**coda_functions** folder contains several files:\
+**auxillary_functions** are the functions called by other scripts. They mostly do prefill other functions or are used for data cleaning and manipulation\
+**inner_functions** are the functions used to calculate the SVD and resulting LT after forecasting by the main functions\
+**main_functions** are the 4 compositional models\
+**to_plot** (a rather ugly name, I know and shall rename this file slightly later) contains some functions used for plotting and data manipulation process that were pulled from the main analysis to ease the review process. **It also contains the RMSE calculation function** which is very important for us, since this is how we select the fitting period and best model\
+**rmse_results** - is a markdown file containing some short description and tables for RMSE checks on different fitting period and also shows the best one\
+**results** Is the main file that calls all other files to produce the results. It prints the most important figures and tables and has some comments (Note that what is being printed starts in line 220)\
+**soren_ppaper** - contains the Sorens paper itself, as well as its statistical supplement that went onluie.\
+**old_version_of_the_paper** Contains the old version of the draf prepared during EDSD.\
 
 # Short description of results, ideas and timeline
 I made a mistake in a code (not in a CoDA models, but in further calculations), so some previous conclusions were partially incorrect. It seems, that decreasing the fitting period only works if we decrease it by 10 years. If more, the RMSE actually increases, and if decrease fitting period to < 1992, models go mental and VECM absolutely fails. This is an interesting finding since LC model do not seem to have such a heavy restriction. Conclusion here is that the CoDA models should be used only if the long enough time series is available.
