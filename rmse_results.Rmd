@@ -67,8 +67,8 @@ model       Females  Males
 
 # -------------------------------------------------------------------------------------------------- #
 After this point the robustness of model results is questionable. 
-VECM model practically does not work, thus, we also cannot be sure that all other models work adequately. Most likely we shall neglect these results, especially since they add no further value 
-to the period choice.
+VECM model practically does not work, thus, we also cannot be sure that all other models work adequately. Most likely we shall neglect these results, 
+especially since they add no further value  to the period choice.
 # -------------------------------------------------------------------------------------------------- #
 
 # -------------------------------------------------------------------------------------------------- #
